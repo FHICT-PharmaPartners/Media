@@ -1,2 +1,1 @@
 # PharmaPartners
-test furkan
