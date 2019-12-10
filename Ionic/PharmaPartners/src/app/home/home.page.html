@@ -1,12 +1,11 @@
 <ion-header>
   <ion-toolbar>
-<img src="/assets/Logo.svg" alt="">
+    <img src="/assets/Logo.svg" alt="">
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-list>
-
   <!-- Sliding item with expandable options on both sides -->
   <ion-item-sliding color="primary" *ngFor="let medicine of medicines?.items">
     <ion-item-options color="primary" side="end">
@@ -22,7 +21,7 @@
       <ion-text class="dosis">1dd</ion-text>
     </ion-item>
 
-  </ion-item-sliding>
+  </ion-item-sliding> <!--andere slide-->
   <ion-item-sliding color="primary">
     <ion-item-options color="primary" side="end">
       <ion-item-option color="danger" expandable>
@@ -42,10 +41,19 @@
 </ion-list>
 
 </ion-content>
+
 <ion-footer>
   <ion-toolbar color="primary">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
+    
+    
+    <ion-buttons slot="end">
+        <ion-button href="/zoeken">
+          <ion-icon name="add"></ion-icon>
+        </ion-button>
+    </ion-buttons>
+
   </ion-toolbar>
 </ion-footer>

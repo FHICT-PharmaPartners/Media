@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button text="" defaultHref="home"></ion-back-button>
+      </ion-buttons>
+    <!-- <ion-title>Zoekpagina</ion-title> -->
+    <!-- Default Searchbar -->
+<ion-searchbar animated placeholder="Zoek medicijnen"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<!-- Accordion lijst -->
+<ion-card (click)="expandItem(item)" *ngFor="let item of items">
+  <ion-card-header>
+    <ion-card-title>Medicijnen zoekresultaat</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <app-expandable expandHeight="100px" [expanded]="item.expanded">
+      <p>
+        Meer info medicijn
+      </p>
+      <p>
+        Meer info medicijn
+      </p>
+      <p>
+        Meer info medicijn
+      </p>
+      <p>
+        Meer info medicijn
+      </p>
+      <p>
+        Meer info medicijn
+      </p>
+      <p>
+        Meer info medicijn
+      </p>
+    </app-expandable>
+  </ion-card-content>
+</ion-card>
+
+</ion-content>
