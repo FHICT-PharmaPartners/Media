@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { LoginPage } from '/login';
+import { LoginPage } from './login';
 @Component({
   selector: 'app-registreren',
   templateUrl: './registreren.page.html',
