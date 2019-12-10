@@ -18,6 +18,18 @@ const routes: Routes = [
   {
     path: 'info',
     loadChildren: () => import('./info/info.module').then( m => m.InfoPageModule)
+  },
+  {
+    path: 'profiel',
+    loadChildren: () => import('./profiel/profiel.module').then( m => m.ProfielPageModule)
+  },
+  {
+    path: 'overzicht',
+    loadChildren: () => import('./overzicht/overzicht.module').then( m => m.OverzichtPageModule)
+  },
+  {
+    path: 'zoeken',
+    loadChildren: () => import('./zoeken/zoeken.module').then( m => m.ZoekenPageModule)
   }
 ];
 
