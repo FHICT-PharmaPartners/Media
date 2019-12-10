@@ -1,5 +1,7 @@
 {
   "name": "PharmaPartners",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

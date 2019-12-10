@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar>
+    <img src="/assets/Logo.svg" alt="">
+
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-title>Registreren</ion-title>
+    </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label color="primary" position="stacked">Email</ion-label>
+    <ion-input type="email" placeholder="Email hier"></ion-input>
+  </ion-item>
+
+<ion-item>
+    <ion-label color="primary" position="stacked">Wachtwoord</ion-label>
+    <ion-input type="password" placeholder="Wachtwoord hier"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label color="primary" position="stacked">Herhaal Wachtwoord</ion-label>
+    <ion-input type="password" placeholder="Wachtwoord hier"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label color="primary" position="stacked">Voor/Achternaam</ion-label>
+    <ion-input type="text" placeholder="Naam hier"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label color="primary" position="stacked">Gewicht</ion-label>
+    <ion-input type="number" placeholder="Gewicht hier"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label color="primary" position="stacked">Lengte</ion-label>
+    <ion-input type="number" placeholder="Lengte hier"></ion-input>
+  </ion-item>
+  <ion-radio-group>
+    <ion-list-header>
+      <ion-label>Name</ion-label>
+    </ion-list-header>
+
+    <ion-button>
+      <ion-label>Biff</ion-label>
+      <ion-radio slot="start" value="biff" checked></ion-radio>
+    </ion-button>
+
+    <ion-button>
+      <ion-label>Griff</ion-label>
+      <ion-radio slot="start" value="griff"></ion-radio>
+    </ion-button>
+
+  </ion-radio-group>
+
+  <div class="ion-padding">
+    <ion-button expand="block" type="submit" class="ion-no-margin">Registreren</ion-button>
+  </div>
+
+
+
+
+
+  <div class="registreren">
+    <p color="primary">Al een Acount?</p>
+  <ion-button (click)="goLoginpage()"id="registreren" expand="block" style="margin:auto;"> Login</ion-button>
+</div>
+</ion-content>

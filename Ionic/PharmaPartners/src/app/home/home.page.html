@@ -7,7 +7,7 @@
 <ion-content>
   <ion-list>
   <!-- Sliding item with expandable options on both sides -->
-  <ion-item-sliding color="primary">
+  <ion-item-sliding color="primary" *ngFor="let medicine of medicines?.items">
     <ion-item-options color="primary" side="end">
       <ion-item-option color="danger" expandable>
         Delete
@@ -16,8 +16,8 @@
 
     <ion-item color="primary">
       <ion-icon slot="start" color="light" name="nutrition"></ion-icon>
-      <ion-label>medicijn</ion-label>
-      <ion-text class="info">info over het medicijn wat hier wordt afgebeeld</ion-text>
+      <ion-label></ion-label>
+      <ion-text class="info">{{ medicine.description }}</ion-text>
       <ion-text class="dosis">1dd</ion-text>
     </ion-item>
 
