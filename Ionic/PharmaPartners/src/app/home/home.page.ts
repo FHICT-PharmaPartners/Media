@@ -11,7 +11,9 @@ import { MedicineService } from '../Services/medicine-services';
 export class HomePage {
 
   medicines: Medicines = new Medicines;
-  constructor(private dataService: MedicineService) { }
+  constructor(private dataService: MedicineService) { 
+    this.medicines.items = new Array;
+  }
 
 
   ngOnInit() {

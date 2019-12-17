@@ -19,7 +19,7 @@ const routes: Routes = [
     path: 'info',
     loadChildren: () => import('./info/info.module').then( m => m.InfoPageModule)
   },
-  { 
+  {
     path: 'profiel',
     loadChildren: () => import('./profiel/profiel.module').then( m => m.ProfielPageModule)
   },
@@ -28,16 +28,12 @@ const routes: Routes = [
     loadChildren: () => import('./overzicht/overzicht.module').then( m => m.OverzichtPageModule)
   },
   {
-    path: 'zoeken',
-    loadChildren: () => import('./zoeken/zoeken.module').then( m => m.ZoekenPageModule)
-  },
-    {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
   {
-    path: 'registreren',
-    loadChildren: () => import('./registreren/registreren.module').then( m => m.RegistrerenPageModule)
+    path: 'zoeken',
+    loadChildren: () => import('./zoeken/zoeken.module').then( m => m.ZoekenPageModule)
   }
 ];
 

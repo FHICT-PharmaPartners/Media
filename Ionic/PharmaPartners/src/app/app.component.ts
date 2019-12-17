@@ -42,6 +42,9 @@ export class AppComponent implements OnInit{
   }
 
 
+  ngOnInit() {
+  }
+  
   initializeApp() {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
