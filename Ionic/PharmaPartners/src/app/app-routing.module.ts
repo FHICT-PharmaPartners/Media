@@ -38,6 +38,10 @@ const routes: Routes = [
   {
     path: 'registreren',
     loadChildren: () => import('./registreren/registreren.module').then( m => m.RegistrerenPageModule)
+  },
+  {
+    path: 'contact',
+    loadChildren: () => import('./contact/contact.module').then( m => m.ContactPageModule)
   }
 ];
 
