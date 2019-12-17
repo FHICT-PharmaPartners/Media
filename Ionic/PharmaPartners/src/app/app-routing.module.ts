@@ -38,6 +38,10 @@ const routes: Routes = [
   {
     path: 'registreren',
     loadChildren: () => import('./registreren/registreren.module').then( m => m.RegistrerenPageModule)
+  },
+  {
+    path: 'persoonsgegevens',
+    loadChildren: () => import('./persoonsgegevens/persoonsgegevens.module').then( m => m.PersoonsgegevensPageModule)
   }
 ];
 

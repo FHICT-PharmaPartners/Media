@@ -1,0 +1,23 @@
+ion-header img {
+  height: 6vh;
+  overflow: hidden;
+  margin-left: calc(50vw - 3vh);
+}
+ion-label{
+
+}
+ion-item,ion-item-sliding{
+  height: 10vh;
+  border-radius: 16px;
+  width:98vw;
+  margin: 0px 1vw 1vh 1vw;
+}
+ion-icon{
+  margin: 2vh 0px 2vh 0px;
+  height: 6vh;
+  width: 6vh;
+}
+h1{
+  margin-left:auto;
+  margin-right:auto;
+}
