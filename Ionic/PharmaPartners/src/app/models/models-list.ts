@@ -10,28 +10,28 @@ export class User{
 export class Advice{
   id?: string;
   description: string;
-  creationTime: timestamp;
+  creationTime: Date;
   user: string;
 }
 
 export class MedicalInfo{
   id?: string;
-  date: date;
-  height: int;
-  weight: double;
+  date: Date;
+  height: number;
+  weight: number;
   sex: string;
-  creatingClearance: int;
-  age: int;
+  creatingClearance: number;
+  age: number;
   postMenopause: boolean;
   user: string;
 }
 
 export class PatientMedicine{
   id?: string;
-  dosage: int;
-  usageDuration: int;
-  startDate: date;
-  endDate: date; //null
+  dosage: number;
+  usageDuration: number;
+  startDate: Date;
+  endDate: Date; //null
   user: string;
 }
 
