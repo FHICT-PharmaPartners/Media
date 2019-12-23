@@ -40,6 +40,10 @@ const routes: Routes = [
     loadChildren: () => import('./registreren/registreren.module').then( m => m.RegistrerenPageModule)
   },
   {
+    path: 'persoonsgegevens',
+    loadChildren: () => import('./persoonsgegevens/persoonsgegevens.module').then( m => m.PersoonsgegevensPageModule)
+  },
+  {
     path: 'contact',
     loadChildren: () => import('./contact/contact.module').then( m => m.ContactPageModule)
   }
