@@ -1,5 +1,5 @@
-import {Injectable} from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Medicine } from '../models/models-list';
 
 @Injectable({
@@ -12,10 +12,17 @@ export class MedicineService{
 
   constructor(private http: HttpClient){}
 
-  getMedicine(): Promise<any>{
+    getMedicine(): Promise<any>{
+        let jwt = localStorage.getItem("jwt");
+
+      let opts = {
+          headers: new HttpHeaders({
+              'Authentication': 'Bearer ' + jwt
+          })
+      };
 
     return new Promise((resolve) => {
-      this.http.get(this.apiURL)
+        this.http.get(this.apiURL, opts)
           .subscribe((response) => {
             window.console.log(response);
             this.medicine = response;

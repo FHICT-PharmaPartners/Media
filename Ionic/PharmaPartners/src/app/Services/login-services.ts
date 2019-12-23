@@ -12,11 +12,11 @@ export class LoginService {
 
     constructor(private http: HttpClient) { }
 
-    login(): Promise<any> {
+    login(username, password): Promise<any> {
 
         let bodyArray = {
-            username: "test@test.nl",
-            password: "P@ssw0rd"
+            username: username,
+            password: password
         };
 
 
@@ -29,9 +29,8 @@ export class LoginService {
         return new Promise((resolve) => {
             this.http.post(this.apiURL, JSON.stringify(bodyArray), opts)
                 .subscribe((response) => {
-                    window.console.log(response);
-                    //this.jwt = response;
-                    //resolve(this.medicine);
+                    this.jwt = response;
+                    resolve(this.jwt);
                 });
         });
     }

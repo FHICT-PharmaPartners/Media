@@ -16,9 +16,15 @@ logCredentials(emailAddress){
 }
 
     login() {
-        return this.dataService.login()
+
+        //hier moet ik de waardes van input velden komen
+        let username = "test@test.nl";
+        let password = "P@ssw0rd";
+
+        return this.dataService.login(username, password)
             .then(data => {
-                console.log(data);
+                let jwt = data.jwt;
+                localStorage.setItem("jwt", jwt);
             }).catch(err => {
                 window.console.log(err);
             })
