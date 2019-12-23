@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ZoekenPage implements OnInit {
   public items: any = []; //added
 
-  constructor() {   //alles in constructor
+  constructor() {   //alles in constructor 
     this.items = [
     { expanded: false },
     { expanded: false },
@@ -19,7 +19,7 @@ export class ZoekenPage implements OnInit {
     { expanded: false },
     { expanded: false },
     { expanded: false }
-  ];
+  ]; 
 }
 
 expandItem(item): void {
@@ -38,7 +38,6 @@ expandItem(item): void {
 }
 
 
-ngOnInit() {}
-
-
+	ngOnInit() {
+	}
 }
