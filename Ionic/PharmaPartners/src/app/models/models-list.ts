@@ -56,3 +56,7 @@ export class Atc{
   id?: string;
   name: string;
 }
+
+export class JWT {
+    jwt: string;
+}

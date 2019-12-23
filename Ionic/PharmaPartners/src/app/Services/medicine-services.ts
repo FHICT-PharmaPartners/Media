@@ -7,7 +7,7 @@ import { Medicine } from '../models/models-list';
 })
 export class MedicineService{
 
-  private apiURL = 'http://145.93.140.155:81/api/medicine';
+  private apiURL = 'http://10.10.10.1:81/api/medicine';
   private medicine: any;
 
   constructor(private http: HttpClient){}

@@ -18,12 +18,12 @@ export class AppComponent implements OnInit{
     },
     {
       title: 'Contact',
-      url: '/info',
+      url: '/contact',
       icon: 'help'
     },
     {
       title: 'Profiel',
-      url: '/profiel',
+      url: '/persoonsgegevens',
       icon: 'person'
     },
     {
