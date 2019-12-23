@@ -44,17 +44,15 @@ export class Medicine{
   name: string;
   description: string;
   prk: string;
+  atc: string;
 }
 
 export class Prk{
   id?: string;
-  type: string;
   name: string;
 }
 
 export class Atc{
   id?: string;
-  type: string;
   name: string;
-  medicine: string;
 }
