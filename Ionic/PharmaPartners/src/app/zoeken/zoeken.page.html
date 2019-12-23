@@ -11,8 +11,9 @@
 
 <ion-content>
 
+<ion-list>
 <!-- Accordion lijst -->
-<ion-card (click)="expandItem(item)" *ngFor="let item of items">
+<ion-card (click)="expandItem(item)" *ngFor="let medicine of medicines?.items">
   <ion-card-header>
     <ion-card-title>Medicijnen zoekresultaat</ion-card-title>
   </ion-card-header>
@@ -25,5 +26,16 @@
     </app-expandable>
   </ion-card-content>
 </ion-card>
+
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Medicijnen zoekresultaat</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+
+  </ion-card-content>
+</ion-card>
+</ion-list>
 
 </ion-content>

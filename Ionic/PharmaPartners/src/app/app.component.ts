@@ -28,7 +28,7 @@ export class AppComponent implements OnInit{
     },
     {
       title: 'Uitloggen',
-      url: '/profiel',
+      url: '/login',
       icon: 'exit'
     }
   ];
@@ -44,7 +44,7 @@ export class AppComponent implements OnInit{
 
   ngOnInit() {
   }
-  
+
   initializeApp() {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
