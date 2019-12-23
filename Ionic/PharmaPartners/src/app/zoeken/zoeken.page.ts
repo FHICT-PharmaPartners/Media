@@ -37,7 +37,6 @@ expandItem(item): void {
   }
 }
 
-  Stinky() {
-  }
-
+	ngOnInit() {
+	}
 }

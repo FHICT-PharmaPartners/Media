@@ -13,21 +13,21 @@ export class ExpandableComponent implements OnInit {
 
 } */
 
-import { Component, AfterViewInit, Input, ViewChild,  ElementRef, Renderer2, OnInit } from "@angular/core";
+import { Component, AfterViewInit, Input, ViewChild,  ElementRef, Renderer2, } from "@angular/core";
 
 @Component({
   selector: "app-expandable",
   templateUrl: "./expandable.component.html",
   styleUrls: ["./expandable.component.scss"]
 })
-export class ExpandableComponent implements AfterViewInit /*oninit was afterviewinit*/ {
+export class ExpandableComponent implements AfterViewInit {
   @ViewChild("expandWrapper", { read: ElementRef, static: true } ) expandWrapper: ElementRef;
   @Input("expanded") expanded: boolean = false;
   @Input("expandHeight") expandHeight: string = "150px";
 
   constructor(public renderer: Renderer2) {}
 
-  ngAfterViewInit () {/*oninit was afterviewinit*/ 
+  ngAfterViewInit () {
     this.renderer.setStyle(this.expandWrapper.nativeElement, "max-height", this.expandHeight);
   }
 }
