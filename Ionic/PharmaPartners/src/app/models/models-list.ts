@@ -3,8 +3,10 @@ export class User{
   firstName: string;
   lastName: string;
   emailAddress: string;
+  username: string;
   password: string;
   insertion: string;
+  jwt: string;
 }
 
 export class Advice{

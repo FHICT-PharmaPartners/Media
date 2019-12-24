@@ -17,7 +17,7 @@ export class MedicineService{
 
       let opts = {
           headers: new HttpHeaders({
-              'Authentication': 'Bearer ' + jwt
+              'Authorization': 'Bearer ' + jwt
           })
       };
 

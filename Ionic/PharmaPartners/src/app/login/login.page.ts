@@ -18,15 +18,19 @@ logCredentials(emailAddress){
     login() {
 
         //hier moet ik de waardes van input velden komen
-        let username = "test@test.nl";
-        let password = "P@ssw0rd";
+        let username = this.username;
+        let password = this.password;
+
+
 
         return this.dataService.login(username, password)
             .then(data => {
                 let jwt = data.jwt;
                 localStorage.setItem("jwt", jwt);
+
+                location.href = "/home";
             }).catch(err => {
-                window.console.log(err);
+                alert (err)
             })
     }
 
