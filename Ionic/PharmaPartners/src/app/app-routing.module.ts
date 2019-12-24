@@ -46,6 +46,10 @@ const routes: Routes = [
   {
     path: 'contact',
     loadChildren: () => import('./contact/contact.module').then( m => m.ContactPageModule)
+  },
+  {
+    path: 'zoek',
+    loadChildren: () => import('./zoek/zoek.module').then( m => m.ZoekPageModule)
   }
 ];
 

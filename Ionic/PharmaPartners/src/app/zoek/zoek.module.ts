@@ -5,9 +5,9 @@ import { ReactiveFormsModule } from "@angular/forms";
 
 import { IonicModule } from '@ionic/angular';
 
-import { ZoekenPageRoutingModule } from './zoeken-routing.module';
+import { ZoekPageRoutingModule } from './zoek-routing.module';
 
-import { ZoekenPage } from './zoeken.page';
+import { ZoekPage } from './zoek.page';
 
 @NgModule({
   imports: [
@@ -15,8 +15,8 @@ import { ZoekenPage } from './zoeken.page';
     FormsModule,
     ReactiveFormsModule,
     IonicModule,
-    ZoekenPageRoutingModule
+    ZoekPageRoutingModule
   ],
-  declarations: [ZoekenPage]
+  declarations: [ZoekPage]
 })
-export class ZoekenPageModule {}
+export class ZoekPageModule {}
