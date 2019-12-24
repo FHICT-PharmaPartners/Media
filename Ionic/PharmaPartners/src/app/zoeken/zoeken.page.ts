@@ -1,21 +1,3 @@
-// import { Component, OnInit } from '@angular/core';
-
-// @Component({
-//   selector: 'app-zoeken',
-//   templateUrl: './zoeken.page.html',
-//   styleUrls: ['./zoeken.page.scss'],
-// })
-// export class ZoekenPage implements OnInit {
-
-//   constructor() {
-
-// }
-
-// ngOnInit() {}
-
-
-// }
-
 import { Component, } from '@angular/core';
 
 @Component({
@@ -33,7 +15,9 @@ export class ZoekenPage{
 
   onCancel(val) {
     this.show_list = false;
+
   }
+
 
   click_bar() {
     this.show_list = true;
@@ -65,4 +49,7 @@ export class ZoekenPage{
                 }
   }
 
+}
+	ngOnInit() {
+	}
 }
