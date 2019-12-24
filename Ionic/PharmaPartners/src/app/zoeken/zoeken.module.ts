@@ -7,7 +7,6 @@ import { IonicModule } from '@ionic/angular';
 import { ZoekenPageRoutingModule } from './zoeken-routing.module';
 
 import { ZoekenPage } from './zoeken.page';
-import { ExpandableComponent } from '../components/expandable/expandable.component';
 
 @NgModule({
   imports: [
@@ -16,6 +15,6 @@ import { ExpandableComponent } from '../components/expandable/expandable.compone
     IonicModule,
     ZoekenPageRoutingModule
   ],
-  declarations: [ZoekenPage, ExpandableComponent]
+  declarations: [ZoekenPage]
 })
 export class ZoekenPageModule {}
