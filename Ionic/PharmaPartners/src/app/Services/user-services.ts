@@ -5,28 +5,22 @@ import { JWT } from '../models/models-list';
 @Injectable({
     providedIn: 'root'
 })
-export class LoginService {
+export class UserService {
 
-    private apiURL = 'http://10.10.10.1:81/api/login';
-    private jwt: any;
-
+    private apiURL = 'http://10.10.10.1:81/api/user/token/';
+    
     constructor(private http: HttpClient) { }
 
-    login(username, password): Promise<any> {
-
-        let bodyArray = {
-            username: username,
-            password: password
-        };
+    getUser(token): Promise<any> {
 
         let opts = {
             headers: new HttpHeaders({
-                'Content-Type': 'application/json'
+                'Authorization': 'Bearer ' + localStorage.jwt
             })
         };
 
         return new Promise((resolve) => {
-            this.http.post(this.apiURL, JSON.stringify(bodyArray), opts)
+            this.http.get(this.apiURL + token, opts)
                 .subscribe((response) => {
                     this.jwt = response;
                     resolve(this.jwt);

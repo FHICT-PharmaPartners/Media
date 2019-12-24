@@ -12,19 +12,18 @@ export class MedicineService{
 
   constructor(private http: HttpClient){}
 
-    getMedicine(): Promise<any>{
-        let jwt = localStorage.getItem("jwt");
+  getMedicine(): Promise<any>{
+      let jwt = localStorage.getItem("jwt");
 
-      let opts = {
-          headers: new HttpHeaders({
-              'Authorization': 'Bearer ' + jwt
-          })
-      };
+    let opts = {
+        headers: new HttpHeaders({
+            'Authorization': 'Bearer ' + jwt
+        })
+    };
 
     return new Promise((resolve) => {
         this.http.get(this.apiURL, opts)
           .subscribe((response) => {
-            window.console.log(response);
             this.medicine = response;
             resolve(this.medicine);
       });
