@@ -16,7 +16,9 @@ export class ZoekenPage{
 
   onCancel(val) {
     this.show_list = false;
+
   }
+
 
   click_bar() {
     this.show_list = true;
@@ -48,4 +50,7 @@ export class ZoekenPage{
                 }
   }
 
+}
+	ngOnInit() {
+	}
 }
