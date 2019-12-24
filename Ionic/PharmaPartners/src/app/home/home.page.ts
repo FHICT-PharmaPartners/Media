@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { Medicines, Medicine } from '../models/models-list';
 import { MedicineService } from '../Services/medicine-services';
 import { UserService } from '../Services/user-services';
+// import { AuthenticationService } from '../services/AuthenticationService'
 
 @Component({
   selector: 'app-home',
@@ -12,12 +13,17 @@ import { UserService } from '../Services/user-services';
 export class HomePage {
 
   medicines: Medicines = new Medicines;
-  constructor(private dataService: MedicineService, private userService: UserService) { 
+  constructor(private dataService: MedicineService, private userService: UserService) {
     this.medicines.items = new Array;
   }
 
+  const user: any;
+
   ngOnInit() {
-    let user = this.userService.getUser(localStorage.jwt);
+    this.user = this.userService.getUser(localStorage.jwt);
+    console.log(this.user);
+    //console.log(user);
+    localStorage.setItem("User", user.id);
 
     return this.dataService.getMedicine()
       .then(data => {

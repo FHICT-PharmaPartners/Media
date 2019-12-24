@@ -8,7 +8,7 @@ import { JWT } from '../models/models-list';
 export class UserService {
 
     private apiURL = 'http://10.10.10.1:81/api/user/token/';
-    
+
     constructor(private http: HttpClient) { }
 
     getUser(token): Promise<any> {
@@ -22,8 +22,9 @@ export class UserService {
         return new Promise((resolve) => {
             this.http.get(this.apiURL + token, opts)
                 .subscribe((response) => {
-                    this.jwt = response;
-                    resolve(this.jwt);
+                    this.user = response;
+                    // console.log(this.user);
+                    resolve(this.user.id);
                 });
         });
     }

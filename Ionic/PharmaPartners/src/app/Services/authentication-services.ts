@@ -6,10 +6,10 @@ export class AuthenticationService {
 
 	authenticate() {
 	  const jwt = localStorage.getItem("jwt");
-	  
+
 	  if (jwt) {
 	  	let user = dataService.getUser(jwt);
-	  	console.log(user);
+	  	localStorage.setItem("user", user)
 	  } else {
 	  	location.href = "/login";
 	  }
