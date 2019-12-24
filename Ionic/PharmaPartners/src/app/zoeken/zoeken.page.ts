@@ -1,20 +1,3 @@
-// import { Component, OnInit } from '@angular/core';
-
-// @Component({
-//   selector: 'app-zoeken',
-//   templateUrl: './zoeken.page.html',
-//   styleUrls: ['./zoeken.page.scss'],
-// })
-// export class ZoekenPage implements OnInit {
-
-//   constructor() {
-
-// }
-
-// ngOnInit() {}
-
-
-// }
 
 import { Component, } from '@angular/core';
 
