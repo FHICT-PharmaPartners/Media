@@ -28,6 +28,10 @@ export class MedicalInfo {
     user: string;
 }
 
+export class PatientMedicines {
+    items?: Array<PatientMedicine> = [];
+}
+
 export class PatientMedicine {
     id?: string;
     dosage: number;
