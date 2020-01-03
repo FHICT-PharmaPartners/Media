@@ -1,25 +1,27 @@
-import {Component, OnInit} from '@angular/core';
+import { Component } from '@angular/core';
 
-import {PatientMedicines, PatientMedicine} from '../models/models-list';
-import {PatientMedicineService} from '../Services/patient-medicine-service';
+import { Medicines, Medicine } from '../models/models-list';
+import { MedicineService } from '../Services/medicine-services';
 
 @Component({
-    selector: 'app-home',
-    templateUrl: 'home.page.html',
-    styleUrls: ['home.page.scss'],
+  selector: 'app-home',
+  templateUrl: 'home.page.html',
+  styleUrls: ['home.page.scss'],
 })
-export class HomePage implements OnInit {
+export class HomePage {
 
-    patientMedicines: PatientMedicines = new PatientMedicines();
+  medicines: Medicines = new Medicines;
+  constructor(private dataService: MedicineService) { 
+    this.medicines.items = new Array;
+  }
 
-    constructor(private dataService: PatientMedicineService) {
-        this.patientMedicines.items = new Array<PatientMedicine>();
-    }
 
-    ngOnInit() {
-      return this.dataService.getPatientMedicine()
-          .then(data => {
-            this.patientMedicines.items = data;
-          });
-    }
+  ngOnInit() {
+    return this.dataService.getMedicine()
+      .then(data => {
+        this.medicines.items = data;
+        debugger;
+      })
+  }
+
 }
