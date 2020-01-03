@@ -4,16 +4,34 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content  >
   <ion-searchbar
     [(ngModel)]="searchTerm"
     (ionChange)="setFilteredItems()"
   ></ion-searchbar>
-  <ion-button>medicijn toevoegen</ion-button>
 
-  <ion-list>
+
+
+  <ion-list >
     <ion-item *ngFor="let item of items">
       {{ item.title }}
+
+            <ion-label position="stacked">dosage</ion-label>
+            <ion-input type="number" [(ngModel)]='dosage'></ion-input>
+
+            <ion-label position="stacked">startDate</ion-label>
+            <!-- <ion-input type="text" [(ngModel)]='startDate'></ion-input> -->
+            <ion-datetime displayFormat="MM DD YY" [(ngModel)]='startDate'></ion-datetime>
+
+            <ion-label position="stacked">endDate</ion-label>
+            <!-- <ion-input type="text" [(ngModel)]='endDate'></ion-input> -->
+            <ion-datetime displayFormat="MM DD YY" [(ngModel)]='endDate'></ion-datetime>
+
+            <ion-label position="stacked">medicine</ion-label>
+            <ion-input type="text" [(ngModel)]='medicine'></ion-input>
+
+            <ion-button type="submit">Voeg Medicijn Toe</ion-button>
     </ion-item>
+
   </ion-list>
 </ion-content>
