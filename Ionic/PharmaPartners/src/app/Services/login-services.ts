@@ -6,7 +6,7 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
 })
 export class LoginService {
 
-    private apiURL = '/login';
+    private apiURL = '/api/login';
     private jwt: any;
 
     constructor(private http: HttpClient) { }
