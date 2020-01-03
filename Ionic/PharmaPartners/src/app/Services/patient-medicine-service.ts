@@ -4,15 +4,15 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
 @Injectable({
     providedIn: 'root'
 })
-export class MedicineService {
+export class PatientMedicineService {
 
-    private apiURL = '/api/medicine';
-    private medicine: any;
+    private apiURL = '/api/patientMedicine';
+    private patientMedicine: any;
 
     constructor(private http: HttpClient) {
     }
 
-    getMedicine(): Promise<any> {
+    getPatientMedicine(): Promise<any> {
 
         const opts = {
             headers: new HttpHeaders({
@@ -23,9 +23,9 @@ export class MedicineService {
         return new Promise((resolve) => {
             this.http.get(this.apiURL, opts)
                 .subscribe((response) => {
-
-                    this.medicine = response;
-                    resolve(this.medicine);
+                    console.log(response);
+                    this.patientMedicine = response;
+                    resolve(this.patientMedicine);
                 });
         });
     }
