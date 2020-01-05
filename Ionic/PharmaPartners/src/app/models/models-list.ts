@@ -39,6 +39,16 @@ export class PatientMedicine {
     startDate: Date;
     endDate: Date;
     user: string;
+    medicine: {
+        id?: string;
+        name: string;
+        description: string;
+        prk: {
+            id?: string;
+            name: string;
+        }
+        atc: string;
+    };
 }
 
 export class Medicines {

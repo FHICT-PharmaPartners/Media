@@ -1,64 +1,67 @@
 <ion-header>
-  <ion-toolbar>
-    <img src="/assets/Logo.svg" alt="">
-  </ion-toolbar>
+    <ion-toolbar>
+        <img src="/assets/Logo.svg" alt="">
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
-<ion-item class="conflict">Conflicten</ion-item>
-<ion-item><p>atarax</p><ion-icon class="alert" name="alert"></ion-icon><p>paracetemol</p></ion-item>
-<ion-item class="conflict">Belastend voor de lever</ion-item>
 
-  <ion-list>
-  <!-- Sliding item with expandable options on both sides -->
-  <ion-item-sliding color="primary" *ngFor="let patientMedicine of patientMedicines?.items">
-    <ion-item-options color="primary" side="end">
-      <ion-item-option color="danger" expandable>
-        Delete
-      </ion-item-option>
-    </ion-item-options>
-
-    <ion-item color="primary">
-      <ion-icon slot="start" color="light" name="nutrition"></ion-icon>
-      <ion-label></ion-label>
-      <ion-text class="info">{{ patientMedicine.user }}</ion-text>
-      <ion-text class="dosis">1dd</ion-text>
+    <ion-item class="ion-align-items-center">Geen conflicten
+        <ion-icon color="dark" name="checkmark"></ion-icon>
     </ion-item>
+    <!--<ion-item class="conflict">Conflicten</ion-item>-->
+    <!--<ion-item><p>atarax</p><ion-icon class="alert" name="alert"></ion-icon><p>paracetemol</p></ion-item>-->
+    <!--<ion-item class="conflict">Belastend voor de lever</ion-item>-->
 
-  </ion-item-sliding> <!--andere slide-->
-  <ion-item-sliding color="primary">
-    <ion-item-options color="primary" side="end">
-      <ion-item-option color="danger" expandable>
-        Delete
-      </ion-item-option>
-    </ion-item-options>
+    <ion-list>
+        <!-- Sliding item with expandable options on both sides -->
+        <ion-item-sliding color="primary" *ngFor="let patientMedicine of patientMedicines?.items">
+            <ion-item-options color="primary" side="end">
+                <ion-item-option color="danger" expandable>
+                    Delete
+                </ion-item-option>
+            </ion-item-options>
 
-    <ion-item color="primary">
-      <ion-icon slot="start" color="light" name="nutrition"></ion-icon>
-      <ion-label>medicijn</ion-label>
-      <ion-text class="info">info over het medicijn wat hier wordt afgebeeld</ion-text>
-      <ion-text class="dosis">1dd</ion-text>
-    </ion-item>
+            <ion-item color="primary">
+                <img *ngIf="patientMedicine.medicine.prk.name == 'PRKM1'" slot="start"
+                          src="/assets/Pill.svg" /> <!-- Pil -->
+                <img *ngIf="patientMedicine.medicine.prk.name == 'PRKM2'" slot="start"
+                          src="/assets/Powder.svg" /> <!-- Poeder -->
+                <img *ngIf="patientMedicine.medicine.prk.name == 'PRKM3'" slot="start"
+                          src="/assets/Liquid.svg" /> <!-- Vloeistof -->
+                <ion-label></ion-label>
+                <ion-text slot="start" class="info">{{ patientMedicine.medicine.name }}</ion-text>
+                <ion-text class="info">{{ patientMedicine.dosage }}</ion-text>
+                <ion-text class="dosis">dd</ion-text>
+            </ion-item>
 
-  </ion-item-sliding>
+        </ion-item-sliding> <!--andere slide-->
+        <ion-item-sliding color="primary">
+            <ion-item-options color="primary" side="end">
+                <ion-item-option color="danger" expandable>
+                    Delete
+                </ion-item-option>
+            </ion-item-options>
 
-</ion-list>
+        </ion-item-sliding>
+
+    </ion-list>
 
 </ion-content>
 
 <ion-footer>
-  <ion-toolbar color="primary">
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
 
 
-    <ion-buttons slot="end">
-        <ion-button href="/zoeken">
-          <ion-icon name="add"></ion-icon>
-        </ion-button>
-    </ion-buttons>
+        <ion-buttons slot="end">
+            <ion-button href="/zoeken">
+                <ion-icon name="add"></ion-icon>
+            </ion-button>
+        </ion-buttons>
 
-  </ion-toolbar>
+    </ion-toolbar>
 </ion-footer>
