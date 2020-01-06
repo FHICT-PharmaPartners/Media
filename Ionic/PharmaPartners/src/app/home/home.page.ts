@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { Medicines, Medicine } from '../models/models-list';
-import { MedicineService } from '../Services/medicine-services';
+import { MedicineService } from '../services/medicine-services';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +11,7 @@ import { MedicineService } from '../Services/medicine-services';
 export class HomePage {
 
   medicines: Medicines = new Medicines;
-  constructor(private dataService: MedicineService) { 
+  constructor(private dataService: MedicineService) {
     this.medicines.items = new Array;
   }
 

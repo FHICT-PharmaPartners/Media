@@ -7,8 +7,12 @@ ion-header img {
 .medlijst {
   height: 10vh;
   border-radius: 16px;
-  width:98vw;
-  margin: 0px 1vw 1vh 1vw;
+  width:auto;
+  margin-top:1vh;
+}
+
+ion-content{
+  padding:0px, 2vw, 0px, 2vw;
 }
 
 ion-icon{
