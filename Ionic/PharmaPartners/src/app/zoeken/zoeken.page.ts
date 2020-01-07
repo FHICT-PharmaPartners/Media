@@ -16,7 +16,7 @@ export class ZoekenPage implements OnInit {
 
     constructor(private dataService: MedicineService, private modalCtrl: ModalController) {
         this.medicines.items = new Array<Medicine>();
-
+        console.log(this.medicines);
     }
 
     ngOnInit() {

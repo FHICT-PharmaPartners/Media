@@ -4,7 +4,7 @@
     </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding ="true">
 
 
     <ion-item class="ion-align-items-center">Geen conflicten
@@ -31,6 +31,8 @@
                           src="/assets/Powder.svg" /> <!-- Poeder -->
                 <img *ngIf="patientMedicine.medicine.prk.name == 'PRKM3'" slot="start"
                           src="/assets/Liquid.svg" /> <!-- Vloeistof -->
+                <img *ngIf="patientMedicine.medicine.prk.name == 'PRKM4'" slot="start"
+                     src="/assets/Liquid.svg" /> <!-- tijdelijke extra prk -->
                 <ion-label></ion-label>
                 <ion-text slot="start" class="info">{{ patientMedicine.medicine.name }}</ion-text>
                 <ion-text class="info">{{ patientMedicine.dosage }}</ion-text>

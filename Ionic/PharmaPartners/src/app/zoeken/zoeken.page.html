@@ -28,7 +28,14 @@
   <ion-list>
 
     <ion-item class="medlijst" color="primary" *ngFor="let medicine of medicines?.items">
-      <ion-icon slot="start" color="light" name="nutrition"></ion-icon>
+      <img *ngIf="medicine.medicinePrk == 'PRKM1'" slot="start"
+           src="/assets/Pill.svg" /> <!-- Pil -->
+      <img *ngIf="medicine.medicinePrk == 'PRKM2'" slot="start"
+           src="/assets/Powder.svg" /> <!-- Poeder -->
+      <img *ngIf="medicine.medicinePrk == 'PRKM3'" slot="start"
+           src="/assets/Liquid.svg" /> <!-- Vloeistof -->
+      <img *ngIf="medicine.medicinePrk == 'PRKM4'" slot="start"
+           src="/assets/Liquid.svg" /> <!-- tijdelijke extra prk -->
       <ion-text> {{ medicine.name }} </ion-text>
       <ion-button (click)="showModal(medicine.id)" slot="end"><ion-icon name="add"></ion-icon></ion-button>
     </ion-item>

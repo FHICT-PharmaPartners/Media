@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="b7fb5c05-590a-4465-a78c-a7d6e1ce4a59" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/home/home.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/home/home.page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/home/home.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/home/home.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/models/models-list.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/models/models-list.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/zoeken/zoeken.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/zoeken/zoeken.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/zoeken/zoeken.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/zoeken/zoeken.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/zoeken/zoeken.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/zoeken/zoeken.page.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

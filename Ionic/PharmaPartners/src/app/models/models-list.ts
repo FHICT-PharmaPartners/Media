@@ -59,8 +59,8 @@ export class Medicine {
     id?: string;
     name: string;
     description: string;
-    prk: string;
-    atc: string;
+    medicinePrk: string;
+    medicineAtc: string;
 }
 
 export class Prk {
