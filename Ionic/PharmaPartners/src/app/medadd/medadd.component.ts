@@ -14,11 +14,12 @@ export class MedaddComponent implements OnInit {
   startDate: any;
   dosage: any;
   constructor(private modalCtrl: ModalController, private dataService: PatientMedicineService) { }
-  async close(){
+  async close() {
     await this.modalCtrl.dismiss();
   }
   submit() {
-    this.dataService.saveMedicine(this.dosage, this.startDate, this.endDate).then(r => log('YEET'));
+    this.dataService.saveMedicine(this.dosage, this.startDate, this.endDate);
+    location.href = '/home';
   }
   ngOnInit() {}
 

@@ -1,4 +1,3 @@
-import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Injectable} from '@angular/core';
 
 @Injectable({
@@ -11,7 +10,7 @@ export class AuthenticationService {
         if (!jwt) {
             location.href = `/login`;
         } else {
-            return 'ok';
+            return console.log('Authenticated!');
         }
     }
 }
