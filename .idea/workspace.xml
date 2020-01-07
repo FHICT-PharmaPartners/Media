@@ -3,21 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b7fb5c05-590a-4465-a78c-a7d6e1ce4a59" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/Services/authentication-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/services/authentication-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/Services/data.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/Services/data.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/Services/login-services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/services/login-services.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/Services/medicine-services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/services/medicine-services.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/Services/patient-medicine-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/services/patient-medicine-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/Services/user-services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/services/user-services.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/home/home.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/home/home.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/home/home.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/home/home.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/medadd/medadd.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/medadd/medadd.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/zoeken/zoeken-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/zoeken/zoeken-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/zoeken/zoeken.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/zoeken/zoeken.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/zoeken/zoeken.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/zoeken/zoeken.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/zoeken/zoeken.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/zoeken/zoeken.page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/zoeken/zoeken.page.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/zoeken/zoeken.page.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/services/medicine-services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/services/medicine-services.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/zoeken/zoeken.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/zoeken/zoeken.page.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

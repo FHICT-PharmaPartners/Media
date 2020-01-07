@@ -29,4 +29,10 @@ export class MedicineService {
                 });
         });
     }
+
+    filterItems(searchTerm) {
+        return this.medicine.filter(item => {
+            return item.name.toLowerCase().indexOf(searchTerm.toLowerCase()) > -1;
+        });
+    }
 }
