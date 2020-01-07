@@ -1,0 +1,22 @@
+ion-header img {
+  height: 6vh;
+  overflow: hidden;
+  margin-left: calc(50vw - 3vh);
+}
+
+.medlijst {
+  height: 10vh;
+  border-radius: 16px;
+  width:auto;
+  margin-top:1vh;
+}
+
+ion-content{
+  padding:0px, 2vw, 0px, 2vw;
+}
+
+ion-icon{
+  margin: 2vh 0px 2vh 0px;
+  height: 6vh;
+  width: 6vh;
+}

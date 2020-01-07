@@ -1,4 +1,7 @@
-import {Component,} from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { DataService } from "../services/data.service";
+import { ModalController } from '@ionic/angular';
+import { MedaddComponent } from '../medadd/medadd.component';
 
 @Component({
     selector: 'app-zoeken',
