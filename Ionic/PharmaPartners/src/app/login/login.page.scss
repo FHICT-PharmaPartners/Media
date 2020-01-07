@@ -1,7 +1,11 @@
+body {
+  overflow:hidden;
+}
+
 ion-header img {
   height: 6vh;
   overflow: hidden;
-  margin-left: calc(50vw - 3vh);
+  margin-left: calc(50vw - 4.5vh);
 }
 
 #vergeten{
@@ -18,4 +22,13 @@ ion-header img {
   width: 22vw;
   height: 4vh;
   font-size:4vw;
+}
+
+ion-content {
+  --overflow:hidden;
+  padding: 2vw;
+}
+
+ion-input {
+  width: 96vw;
 }

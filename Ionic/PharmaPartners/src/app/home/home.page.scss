@@ -1,7 +1,12 @@
 ion-header img {
   height: 6vh;
   overflow: hidden;
-  margin-left: calc(50vw - 3vh);
+  margin-left: calc(50vw - 4.5vh);
+}
+
+ion-content {
+  --overflow:hidden;
+  padding: 2vw;
 }
 
 ion-label {

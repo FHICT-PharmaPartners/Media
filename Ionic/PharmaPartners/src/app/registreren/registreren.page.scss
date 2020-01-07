@@ -1,7 +1,7 @@
 ion-header img {
   height: 6vh;
   overflow: hidden;
-  margin-left: calc(50vw - 3vh);
+  margin-left: calc(50vw - 4.5vh);
 }
 
 #vergeten{
@@ -9,13 +9,20 @@ ion-header img {
 }
 .registreren{
   position: absolute;
-  bottom: 10vh;
-  width: 100vw;
+  bottom: 2vh;
+  width: 30vw;
   text-align: center;
+  margin-left: calc(46vw - 15vw);
   font-size: 3vw;
 }
 #registreren{
   width: 22vw;
   height: 4vh;
   font-size:4vw;
+}
+
+
+ion-content {
+  --overflow:hidden;
+  padding: 2vw;
 }
