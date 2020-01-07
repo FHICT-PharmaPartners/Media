@@ -3,6 +3,7 @@ import {ModalController} from '@ionic/angular';
 import {MedaddComponent} from '../medadd/medadd.component';
 import {Medicine, Medicines} from '../models/models-list';
 import {MedicineService} from '../services/medicine-services';
+import {AuthenticationService} from "../services/authentication-service";
 
 @Component({
     selector: 'app-zoeken',
@@ -11,8 +12,9 @@ import {MedicineService} from '../services/medicine-services';
 })
 export class ZoekenPage implements OnInit {
     public searchTerm: string = "";
-    public items: any;
+
     medicines: Medicines = new Medicines();
+    authenticationService: AuthenticationService = new AuthenticationService();
 
     constructor(private dataService: MedicineService, private modalCtrl: ModalController) {
         this.medicines.items = new Array<Medicine>();
@@ -20,6 +22,7 @@ export class ZoekenPage implements OnInit {
     }
 
     ngOnInit() {
+        this.authenticationService.authenticate();
         return this.dataService.getMedicine()
             .then(data => {
                 this.medicines.items = data;

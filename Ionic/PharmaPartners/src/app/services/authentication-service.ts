@@ -5,33 +5,13 @@ import {Injectable} from '@angular/core';
     providedIn: 'root'
 })
 export class AuthenticationService {
-    constructor(private http: HttpClient) {
-    }
-
-    private apiURL = `/user/token`;
-    private user = Object;
-
-
-    authenticate(username, password) {
-
-        const opts = {
-            headers: new HttpHeaders({
-                'Content-Type': 'application/json'
-            })
-        };
-
+    authenticate() {
         const jwt = localStorage.getItem(`Token`);
 
         if (!jwt) {
             location.href = `/login`;
         } else {
-            return new Promise((resolve) => {
-                this.http.post(this.apiURL + `/` + jwt, JSON.stringify(username, password), opts)
-                    .subscribe((response) => {
-                        this.user = response;
-                        resolve(this.user);
-                    });
-            });
+            return 'ok';
         }
     }
 }
