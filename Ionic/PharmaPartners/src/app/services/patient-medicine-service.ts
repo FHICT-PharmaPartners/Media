@@ -6,7 +6,7 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
 })
 export class PatientMedicineService {
 
-    private apiURL = '/api/patientMedicine';
+    private apiURL = '/api/patientMedicine/patient/' + localStorage.getItem(`Token`);
     private patientMedicine: any;
 
     constructor(private http: HttpClient) {

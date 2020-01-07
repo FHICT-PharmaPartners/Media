@@ -1,20 +1,35 @@
 <ion-header>
+
   <ion-toolbar>
-    <img src="/assets/Logo.svg" alt="">
-  </ion-toolbar>
+  <ion-buttons slot="start">
+      <ion-button href="/home">
+        <ion-icon expand="full" name="arrow-back"></ion-icon>
+      </ion-button>
+  </ion-buttons>
+
+
+      <ion-buttons slot="start">
+        <img src="/assets/Logo.svg" alt="">
+      </ion-buttons>
+
+    </ion-toolbar>
+
 </ion-header>
 
 <ion-content padding="true">
   <ion-searchbar
     [(ngModel)]="searchTerm"
     (ionChange)="setFilteredItems()"
+    placeholder="zoeken"
   ></ion-searchbar>
+
+
 
   <ion-list>
 
-    <ion-item class="medlijst" color="primary" *ngFor="let item of items">
+    <ion-item class="medlijst" color="primary" *ngFor="let medicine of medicines?.items">
       <ion-icon slot="start" color="light" name="nutrition"></ion-icon>
-      <ion-text> {{ item.title }} </ion-text>
+      <ion-text> {{ medicine.name }} </ion-text>
       <ion-button (click)="showModal()" slot="end"><ion-icon name="add"></ion-icon></ion-button>
     </ion-item>
 
@@ -28,34 +43,3 @@
     </ion-buttons>
   </ion-toolbar>
 </ion-footer>
-
-    <ion-buttons slot="start">
-      <ion-back-button text="" defaultHref="home"></ion-back-button>
-    </ion-buttons>
-      <ion-searchbar  [(ngModel)]="searchQuery" (click)="click_bar()" (ionCancel)="onCancel($event)" (ngModelChange)="change_query($event)" showCancelButton="focus" placeholder="Zoek medicijnen"></ion-searchbar>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-   <div class="ion-padding">
-      <div *ngIf="show_list">
-          <ion-list>
-            <ion-item *ngFor="let item of list_to_show; let i = index" >
-              <ion-label (click)="click_item(i)">{{ item }}</ion-label>
-            </ion-item>
-          </ion-list>
-      </div>
-
-
-      <ion-card *ngIf="!show_list">
-        <ion-card-header>
-          <ion-card-title class="ion-text-center">Meer informatie over het medicijn</ion-card-title> <!--Titel medicijn card-->
-        </ion-card-header>
-
-        <ion-card-content class="ion-justify-content-center">
-              {{ this.list_original[this.selected_index] }} <!--geselecteerde medicijn-->
-              Meer informatie over medicijn.
-        </ion-card-content>
-      </ion-card>
-  </div>
-</ion-content>

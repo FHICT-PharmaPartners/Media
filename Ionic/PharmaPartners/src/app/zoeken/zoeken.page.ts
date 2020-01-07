@@ -1,51 +1,44 @@
-import { Component, OnInit } from "@angular/core";
-import { DataService } from "../services/data.service";
+import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { MedaddComponent } from '../medadd/medadd.component';
+import {Medicine, Medicines} from '../models/models-list';
+import {MedicineService} from '../services/medicine-services';
 
 @Component({
-    selector: 'app-zoeken',
-    templateUrl: './zoeken.page.html',
-    styleUrls: ['./zoeken.page.scss'],
+  selector: 'app-zoeken',
+  templateUrl: 'zoeken.page.html',
+  styleUrls: ['zoeken.page.scss']
 })
-export class ZoekenPage {
+export class ZoekenPage implements OnInit {
+  public searchTerm: string = "";
+  public items: any;
+    medicines: Medicines = new Medicines();
 
-    list_original = ['Abasaglar', 'Danatrol', 'Faslodex', 'Paracetamol']; //items in de list
-    list_to_show = this.list_original;
-    selected_index = -1;
-    show_list = true;
+  constructor(private dataService: MedicineService, private modalCtrl: ModalController) {
+      this.medicines.items = new Array<Medicine>();
 
-    constructor() {
-    }
+  }
 
-    onCancel(val) {
-        this.show_list = false;
+  ngOnInit() {
+      this.setFilteredItems();
+      return this.dataService.getMedicine()
+          .then(data => {
+              this.medicines.items = data;
+              console.log(this.medicines);
+          });
+  }
 
-    }
+async showModal() {
+  const modal = await this.modalCtrl.create({
+    component: MedaddComponent,
+    // componentProps: {
+    //   data: nee
+    // }
+  });
+  await modal.present();
+}
 
-
-    click_bar() {
-        this.show_list = true;
-    }
-
-    click_item(val) {
-        for (let i = 0; i < this.list_original.length; i++) {
-            if (this.list_to_show[val].toUpperCase() === this.list_original[i].toUpperCase()) {
-                this.selected_index = i;
-                break;
-            }
-        }
-        this.show_list = false;
-    }
-
-    change_query(query) {
-        let k = 0;
-        this.list_to_show = [];
-        for (let i = 0; i < this.list_original.length; i++) {
-            if (this.list_original[i].toUpperCase().includes(query.toUpperCase())) {
-                this.list_to_show[k] = this.list_original[i];
-                k += 1;
-            }
-        }
+    setFilteredItems() {
+        // this.items = this.dataService.filterItems(this.searchTerm);
     }
 }

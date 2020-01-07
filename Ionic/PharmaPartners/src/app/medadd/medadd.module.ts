@@ -6,7 +6,7 @@ import { IonicModule } from '@ionic/angular';
 import { MedaddComponent } from './medadd.component';
 
 @NgModule({
-  imports: [CommonModule,IonicModule, FormsModule],
+  imports: [CommonModule, IonicModule, FormsModule],
   declarations: [MedaddComponent],
   entryComponents: [MedaddComponent],
   exports: [MedaddComponent]
