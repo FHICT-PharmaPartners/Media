@@ -30,7 +30,7 @@
     <ion-item class="medlijst" color="primary" *ngFor="let medicine of medicines?.items">
       <ion-icon slot="start" color="light" name="nutrition"></ion-icon>
       <ion-text> {{ medicine.name }} </ion-text>
-      <ion-button (click)="showModal()" slot="end"><ion-icon name="add"></ion-icon></ion-button>
+      <ion-button (click)="showModal(medicine.id)" slot="end"><ion-icon name="add"></ion-icon></ion-button>
     </ion-item>
 
   </ion-list>

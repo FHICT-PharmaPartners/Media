@@ -20,7 +20,6 @@ export class ZoekenPage implements OnInit {
     }
 
     ngOnInit() {
-
         return this.dataService.getMedicine()
             .then(data => {
                 this.medicines.items = data;
@@ -28,10 +27,13 @@ export class ZoekenPage implements OnInit {
             });
     }
 
-    async showModal() {
+    async showModal(id) {
         const modal = await this.modalCtrl.create({
             component: MedaddComponent,
         });
+
+        localStorage.setItem("medicine", id);
+
         await modal.present();
     }
 
