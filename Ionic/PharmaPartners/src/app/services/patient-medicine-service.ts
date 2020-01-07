@@ -7,6 +7,7 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
 export class PatientMedicineService {
 
     private patientMedicine: any;
+    private diagnose: any;
 
     constructor(private http: HttpClient) {
     }
@@ -22,7 +23,6 @@ export class PatientMedicineService {
         return new Promise((resolve) => {
             this.http.get(url, opts)
                 .subscribe((response) => {
-                    console.log(response);
                     this.patientMedicine = response;
                     resolve(this.patientMedicine);
                 });
@@ -51,9 +51,26 @@ export class PatientMedicineService {
         return new Promise((resolve) => {
             this.http.post(url, JSON.stringify(bodyArray), opts)
                 .subscribe((response) => {
-                    console.log(response);
                     this.patientMedicine = response;
                     resolve(this.patientMedicine);
+                });
+        });
+    }
+
+    getDiagnose(): Promise<any> {
+        const url = '/api/patientMedicine/diagnosis';
+        const opts = {
+            headers: new HttpHeaders({
+                Authorization: `Bearer ` + localStorage.getItem(`Token`)
+            })
+        };
+
+        return new Promise((resolve) => {
+            this.http.get(url, opts)
+                .subscribe((response) => {
+                    console.log(response);
+                    this.diagnose = response;
+                    resolve(this.diagnose);
                 });
         });
     }

@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {PatientMedicines, PatientMedicine} from '../models/models-list';
+import {PatientMedicines, PatientMedicine, Diagnose} from '../models/models-list';
 import {PatientMedicineService} from '../services/patient-medicine-service';
 import {AuthenticationService} from "../services/authentication-service";
 
@@ -10,6 +10,7 @@ import {AuthenticationService} from "../services/authentication-service";
 })
 export class HomePage implements OnInit {
 
+    diagnose: Diagnose = new Diagnose();
     patientMedicines: PatientMedicines = new PatientMedicines();
     authenticationService: AuthenticationService = new AuthenticationService();
 
@@ -19,9 +20,13 @@ export class HomePage implements OnInit {
 
     ngOnInit() {
         this.authenticationService.authenticate();
-        return this.dataService.getPatientMedicine()
+        this.dataService.getPatientMedicine()
             .then(data => {
                 this.patientMedicines.items = data;
+            });
+        return this.dataService.getDiagnose()
+            .then(data => {
+                this.diagnose = data;
             });
     }
 }

@@ -76,3 +76,10 @@ export class Atc {
 export class JWT {
     jwt: string;
 }
+
+export class Diagnose {
+    passed: boolean;
+    issues: Array<string> = [];
+    seeDoctor: boolean;
+    advice: string;
+}
