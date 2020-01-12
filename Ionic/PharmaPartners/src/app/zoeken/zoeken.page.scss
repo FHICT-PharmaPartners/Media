@@ -1,7 +1,7 @@
 ion-header img {
   height: 6vh;
   overflow: hidden;
-  margin-left: calc(50vw - 3vh);
+  margin-left: calc(30vw - 3vh);
 }
 
 .medlijst {
@@ -18,5 +18,18 @@ ion-content{
 ion-icon{
   margin: 2vh 0px 2vh 0px;
   height: 6vh;
+  width: 6vh;
+}
+
+#back-button {
+  margin: 2vh 0px 2vh 0px;
+  height: 6vh;
+  width: 6vh;
+}
+
+.medicijn {
+  height: 6vh;
+  overflow: hidden;
+  margin: 2vh 0px 2vh 0px;
   width: 6vh;
 }

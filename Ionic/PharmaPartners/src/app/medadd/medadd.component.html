@@ -1,23 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+    <ion-button id="close-button" (click)="close()"><ion-icon expand="full" name="close"></ion-icon></ion-button>
+    </ion-buttons>
+    </ion-toolbar>
+    </ion-header>
+
 
 <ion-content>
-  <ion-button (click)="close()">close</ion-button>
+
   <ion-list >
     <ion-item>
-            <ion-label position="stacked">dosage</ion-label>
-            <ion-input type="number" [(ngModel)]='dosage'></ion-input>
+            <ion-label position="stacked">Dosering</ion-label>
+            <ion-input placeholder="vul nummer in" type="number" [(ngModel)]='dosage'></ion-input>
 
-            <ion-label position="stacked">startDate</ion-label>
+            <ion-label position="stacked">Begin datum</ion-label>
             <!-- <ion-input type="text" [(ngModel)]='startDate'></ion-input> -->
-            <ion-datetime displayFormat="MM DD YY" [(ngModel)]='startDate'></ion-datetime>
+            <ion-datetime placeholder="klik hier" displayFormat="MM DD YY" [(ngModel)]='startDate'></ion-datetime>
 
-            <ion-label position="stacked">endDate</ion-label>
+            <ion-label position="stacked">Eind datum</ion-label>
             <!-- <ion-input type="text" [(ngModel)]='endDate'></ion-input> -->
-            <ion-datetime displayFormat="MM DD YY" [(ngModel)]='endDate'></ion-datetime>
+            <ion-datetime placeholder="klik hier" displayFormat="MM DD YY" [(ngModel)]='endDate'></ion-datetime>
 
-            <ion-label position="stacked">medicine</ion-label>
-            <ion-input type="text" [(ngModel)]='medicine'></ion-input>
-
-            <ion-button (click)="showModal()">Voeg Medicijn Toe</ion-button>
+            <ion-button class="toevoegbutton" expand="block" href="/zoeken" (click)="showModal()">Voeg Medicijn Toe</ion-button>
     </ion-item>
 
   </ion-list>

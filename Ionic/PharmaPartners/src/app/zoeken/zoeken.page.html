@@ -1,13 +1,26 @@
 <ion-header>
+
   <ion-toolbar>
-    <img src="/assets/Logo.svg" alt="">
-  </ion-toolbar>
+  <ion-buttons slot="start">
+      <ion-button href="/home">
+        <ion-icon expand="full" name="arrow-back"></ion-icon>
+      </ion-button>
+  </ion-buttons>
+
+
+      <ion-buttons slot="start">
+        <img src="/assets/Logo.svg" alt="">
+      </ion-buttons>
+
+    </ion-toolbar>
+
 </ion-header>
 
 <ion-content padding="true">
   <ion-searchbar
     [(ngModel)]="searchTerm"
     (ionChange)="setFilteredItems()"
+    placeholder="zoeken"
   ></ion-searchbar>
 
 
@@ -15,7 +28,7 @@
   <ion-list>
 
     <ion-item class="medlijst" color="primary" *ngFor="let item of items">
-      <ion-icon slot="start" color="light" name="nutrition"></ion-icon>
+      <img class="medicijn" slot="start" src="/assets/medicine.png" alt="">
       <ion-text> {{ item.title }} </ion-text>
       <ion-button (click)="showModal()" slot="end"><ion-icon name="add"></ion-icon></ion-button>
     </ion-item>
