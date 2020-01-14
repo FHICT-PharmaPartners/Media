@@ -17,7 +17,7 @@
     <ion-item class="conflict" >
              <div style="width: 100%; text-align: center;">
                <p>Mogelijk conflict</p>
-                 <ion-button (click)="showModal(diagnose)" slot="end"><ion-icon color="danger" name="warning" style="font-size: 28px;"></ion-icon></ion-button>
+                 <ion-button (click)="showModal(diagnose)" slot="end"><ion-icon color="light" name="warning" style="font-size: 28px;"></ion-icon></ion-button>
             <p>{{ diagnose.advice }}</p>
             <p *ngIf="diagnose.seeDoctor == 'true'"style="font-size: 22px;"><ion-icon color="success" style="font-size: 22px;"name="call"></ion-icon> 088 688 88 66</p>
           </div>
@@ -31,7 +31,7 @@
         <!-- Sliding item with expandable options on both sides -->
         <ion-item-sliding color="primary" *ngFor="let patientMedicine of patientMedicines?.items">
             <ion-item-options color="primary" side="end">
-                <ion-item-option color="danger" expandable>
+                <ion-item-option color="danger" onclick="delete(this.patientMedicine.medicine.name);" expandable>
                     Delete
                 </ion-item-option>
             </ion-item-options>
@@ -52,14 +52,8 @@
             </ion-item>
 
         </ion-item-sliding> <!--andere slide-->
-        <ion-item-sliding color="primary">
-            <ion-item-options color="primary" side="end">
-                <ion-item-option color="danger" expandable>
-                    Delete
-                </ion-item-option>
-            </ion-item-options>
 
-        </ion-item-sliding>
+
 
     </ion-list>
 

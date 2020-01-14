@@ -14,7 +14,9 @@ export class HomePage implements OnInit {
 
     diagnose: Diagnose = new Diagnose();
     patientMedicines: PatientMedicines = new PatientMedicines();
+    delete(medicine){
 
+    }
     constructor(private dataService: PatientMedicineService, private modalCtrl: ModalController) {
         this.patientMedicines.items = new Array<PatientMedicine>();
     }
@@ -38,6 +40,3 @@ export class HomePage implements OnInit {
         await modal.present();
     }
 }
-
-
-
