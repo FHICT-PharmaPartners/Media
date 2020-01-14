@@ -1,20 +1,20 @@
 
 <ion-content>
-  <ion-button (click)="close()">close</ion-button>
+  <ion-button id="closebutton" (click)="close()"><ion-icon expand="full" name="close"></ion-icon></ion-button>
   <ion-list >
     <ion-item>
-            <ion-label position="stacked">dosage</ion-label>
-            <ion-input type="number" [(ngModel)]='dosage'></ion-input>
+            <ion-label position="stacked">Dosering</ion-label>
+            <ion-input type="number" placeholder="vul nummer in" [(ngModel)]='dosage'></ion-input>
 
-            <ion-label position="stacked">startDate</ion-label>
+            <ion-label position="stacked">Begin datum</ion-label>
             <!-- <ion-input type="text" [(ngModel)]='startDate'></ion-input> -->
-            <ion-datetime displayFormat="MM DD YY" [(ngModel)]='startDate'></ion-datetime>
+            <ion-datetime displayFormat="MM DD YY" placeholder="klik hier" [(ngModel)]='startDate'></ion-datetime>
 
-            <ion-label position="stacked">endDate</ion-label>
+            <ion-label position="stacked">Eind datum</ion-label>
             <!-- <ion-input type="text" [(ngModel)]='endDate'></ion-input> -->
-            <ion-datetime displayFormat="MM DD YY" [(ngModel)]='endDate'></ion-datetime>
+            <ion-datetime displayFormat="MM DD YY" placeholder="klik hier" [(ngModel)]='endDate'></ion-datetime>
 
-            <ion-button (click)="submit()">Voeg Medicijn Toe</ion-button>
+            <ion-button class="toevoegbutton" (click)="submit()">Voeg Medicijn Toe</ion-button>
     </ion-item>
 
   </ion-list>
