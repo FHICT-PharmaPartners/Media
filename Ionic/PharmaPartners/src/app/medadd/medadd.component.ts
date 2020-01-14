@@ -1,7 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
-import { ModalController } from '@ionic/angular';
-import { PatientMedicineService } from '../services/patient-medicine-service';
-import {log} from "util";
+import {ModalController} from '@ionic/angular';
+import {PatientMedicineService} from '../services/patient-medicine-service';
 
 @Component({
   selector: 'app-medadd',

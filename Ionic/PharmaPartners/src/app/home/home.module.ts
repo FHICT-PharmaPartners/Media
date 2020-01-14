@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
 import { HttpClientModule } from '@angular/common/http';
+import {ShowConflictComponentModule} from '../show-conflict/show-conflict.module';
 
 @NgModule({
   imports: [
@@ -13,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     IonicModule,
     HttpClientModule,
+    ShowConflictComponentModule,
     RouterModule.forChild([
       {
         path: '',

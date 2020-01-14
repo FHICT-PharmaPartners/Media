@@ -1,7 +1,9 @@
 import {Component, OnInit} from '@angular/core';
-import {PatientMedicines, PatientMedicine, Diagnose} from '../models/models-list';
+import {Diagnose, PatientMedicine, PatientMedicines} from '../models/models-list';
 import {PatientMedicineService} from '../services/patient-medicine-service';
-import {AuthenticationService} from "../services/authentication-service";
+import {ModalController} from '@ionic/angular';
+import {ShowConflictComponent} from '../show-conflict/show-conflict.component';
+
 
 @Component({
     selector: 'app-home',
@@ -12,14 +14,12 @@ export class HomePage implements OnInit {
 
     diagnose: Diagnose = new Diagnose();
     patientMedicines: PatientMedicines = new PatientMedicines();
-    authenticationService: AuthenticationService = new AuthenticationService();
 
-    constructor(private dataService: PatientMedicineService) {
+    constructor(private dataService: PatientMedicineService, private modalCtrl: ModalController) {
         this.patientMedicines.items = new Array<PatientMedicine>();
     }
 
     ngOnInit() {
-        this.authenticationService.authenticate();
         this.dataService.getPatientMedicine()
             .then(data => {
                 this.patientMedicines.items = data;
@@ -29,4 +29,15 @@ export class HomePage implements OnInit {
                 this.diagnose = data;
             });
     }
+
+    async showModal(diagnose) {
+        const modal = await this.modalCtrl.create({
+            component: ShowConflictComponent,
+        });
+
+        await modal.present();
+    }
 }
+
+
+
