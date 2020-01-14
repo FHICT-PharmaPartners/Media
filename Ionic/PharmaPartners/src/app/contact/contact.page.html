@@ -8,34 +8,36 @@
 <ion-item> <h1>Contact</h1> </ion-item>
 
 <ion-list>
-    <ion-item class="item"> <h2> Uw huisarts </h2></ion-item>
-    <ion-item class="item"> Naam: <ion-input slot="end" placeholder="Insert connectie"></ion-input></ion-item>
-    <ion-item class="item"> Telefoon: <ion-input slot="end" placeholder="Insert connectie"></ion-input></ion-item>
-    <ion-item class="item"> E-mail: <ion-input slot="end" placeholder="Insert connectie"></ion-input></ion-item>
+  <ion-item class="item" id="center"> <h2> Huisarts </h2></ion-item>
+  <ion-item class="item"> Naam: <ion-input readonly="true" slot="end" placeholder="">Huisartsenpraktijk Schuurmans</ion-input></ion-item>
+  <ion-item class="item"> Telefoon: <ion-input readonly="true" slot="end" placeholder="">013 542 2677</ion-input></ion-item>
+  <ion-item class="item"> E-mail: <ion-input readonly="true" slot="end" placeholder="">praktijkinfo@bsl.nl</ion-input></ion-item>
 </ion-list>
 <ion-list>
   <ion-item class="item"> <h2> PharmaPartners </h2></ion-item>
-  <ion-item class="item"> Telefoon: <ion-input slot="end" placeholder="Insert connectie"></ion-input></ion-item>
-  <ion-item class="item"> E-mail: <ion-input slot="end" placeholder="Insert connectie"></ion-input></ion-item>
+  <ion-item class="item"> Telefoon: <ion-input readonly="true" slot="end" placeholder="">088 6 888 888</ion-input></ion-item>
+  <ion-item class="item"> E-mail: <ion-input readonly="true" slot="end" placeholder="">marketing@pharmapartners.nl</ion-input></ion-item>
 </ion-list>
 
-<ion-grid>
-  <ion-row class="ion-justify-content-center">
-    <ion-col>
+<div class="center">
       <ion-button class="save">Edit</ion-button>
-    </ion-col>
-    <ion-col>
       <ion-button fill="outline" class="cancel">Cancel</ion-button>
-    </ion-col>
-  </ion-row>
-</ion-grid>
+      </div>
 
 </ion-content>
 
 <ion-footer>
   <ion-toolbar color="primary">
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+
+
+      <ion-buttons slot="end">
+          <ion-button href="/zoeken">
+              <ion-icon name="add"></ion-icon>
+          </ion-button>
+      </ion-buttons>
+
   </ion-toolbar>
 </ion-footer>

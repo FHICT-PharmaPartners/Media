@@ -1,9 +1,43 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>profiel</ion-title>
+      <img src="/assets/Logo.svg" alt="">
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+    <ion-list>
+  <ion-item class="item" id="center"> <h2> Profiel </h2></ion-item>
+  <ion-item class="item"> Naam: <ion-input readonly="true" slot="end" placeholder="">Jans Bach</ion-input></ion-item>
+  <ion-item class="item"> E-mail: <ion-input readonly="true" slot="end" placeholder="">JansBach@test.nl</ion-input></ion-item>
+  <ion-item class="item"> Wachtwoord: <ion-input readonly="true" slot="end" placeholder="">********</ion-input></ion-item>
+</ion-list>
+<ion-list>
+  <ion-item class="item"> Gewicht: <ion-input readonly="true" slot="end" placeholder="">70 KG</ion-input></ion-item>
+  <ion-item class="item"> Lengte: <ion-input readonly="true" slot="end" placeholder="">170 CM</ion-input></ion-item>
+  <ion-item class="item"> Geboortedatum: <ion-input readonly="true" slot="end" placeholder="">10/10/1958</ion-input></ion-item>
+  <ion-item class="item"> Geslacht: <ion-input readonly="true" slot="end" placeholder="">Man</ion-input></ion-item>
+</ion-list>
+ 
+<div class="center">
+    <ion-button id="opslaan" disabled="true" (click)='save' outline="true">Opslaan</ion-button>
+    <ion-button id="bewerk" disabled="false" outline="true" (click)='edit'>Bewerk</ion-button>
+  </div>
+ 
+  
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+
+
+      <ion-buttons slot="end">
+          <ion-button href="/zoeken">
+              <ion-icon name="add"></ion-icon>
+          </ion-button>
+      </ion-buttons>
+
+  </ion-toolbar>
+</ion-footer>
