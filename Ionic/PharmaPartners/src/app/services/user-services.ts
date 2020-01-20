@@ -23,7 +23,7 @@ export class UserService {
         return new Promise((resolve) => {
             this.http.get(this.apiURL + token, opts)
                 .subscribe((response) => {
-                    this.user = response;
+                    // this.user = response;
                     console.log(this.user);
                     resolve(this.user);
                 });
