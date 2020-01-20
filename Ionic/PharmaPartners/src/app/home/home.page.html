@@ -17,7 +17,7 @@
     <ion-item class="conflict" >
              <div style="width: 100%; text-align: center;">
                <p>Mogelijk conflict</p>
-                 <ion-button (click)="showModal(diagnose)" slot="end"><ion-icon color="danger" name="warning" style="font-size: 28px;"></ion-icon></ion-button>
+                 <ion-button color="white" (click)="showModal(diagnose)" slot="end"><ion-icon color="danger" name="warning" style="font-size: 28px;"></ion-icon></ion-button>
             <p>{{ diagnose.advice }}</p>
             <p *ngIf="diagnose.seeDoctor == 'true'"style="font-size: 22px;"><ion-icon color="success" style="font-size: 22px;"name="call"></ion-icon> 088 688 88 66</p>
           </div>
