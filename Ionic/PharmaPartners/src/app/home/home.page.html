@@ -31,7 +31,7 @@
         <!-- Sliding item with expandable options on both sides -->
         <ion-item-sliding color="primary" *ngFor="let patientMedicine of patientMedicines?.items">
             <ion-item-options color="primary" side="end">
-                <ion-item-option color="danger" expandable>
+                <ion-item-option (click)="removeMedicineFromList(patientMedicine)" color="danger" expandable>
                     Delete
                 </ion-item-option>
             </ion-item-options>

@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7fb5c05-590a-4465-a78c-a7d6e1ce4a59" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/show-conflict/show-conflict.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/home/home.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/home/home.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/home/home.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/home/home.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/home/home.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/home/home.page.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/home/home.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/home/home.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/medadd/medadd.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/medadd/medadd.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/services/authentication-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/services/authentication-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/services/medicine-services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/services/medicine-services.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/services/patient-medicine-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/services/patient-medicine-service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +32,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Ionic/PharmaPartners/src/app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../order/Order Frontend" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -96,7 +95,9 @@
       <workItem from="1578471533755" duration="136000" />
       <workItem from="1578475323167" duration="20000" />
       <workItem from="1578475381428" duration="640000" />
-      <workItem from="1578992047226" duration="7101000" />
+      <workItem from="1578992047226" duration="7323000" />
+      <workItem from="1579007936986" duration="25000" />
+      <workItem from="1579593241067" duration="3370000" />
     </task>
     <servers />
   </component>
@@ -118,33 +119,35 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1578401352518" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1578475340820">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="987" y="369" key="FileChooserDialogImpl" timestamp="1579593275011">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579007959711" />
+    <state x="987" y="369" key="FileChooserDialogImpl/-1920.176.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1579593275011" />
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1578475340820" />
-    <state width="1882" height="300" key="GridCell.Tab.0.bottom" timestamp="1578998345735">
+    <state width="1882" height="300" key="GridCell.Tab.0.bottom" timestamp="1578999389896">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578227478714" />
-    <state width="1882" height="300" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1578998345735" />
+    <state width="1882" height="300" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1578999389896" />
     <state width="1899" height="304" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578412875969" />
-    <state width="1882" height="300" key="GridCell.Tab.0.center" timestamp="1578998345734">
+    <state width="1882" height="300" key="GridCell.Tab.0.center" timestamp="1578999389895">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578227478713" />
-    <state width="1882" height="300" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1578998345734" />
+    <state width="1882" height="300" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1578999389895" />
     <state width="1899" height="304" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578412875969" />
-    <state width="1882" height="300" key="GridCell.Tab.0.left" timestamp="1578998345734">
+    <state width="1882" height="300" key="GridCell.Tab.0.left" timestamp="1578999389895">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578227478713" />
-    <state width="1882" height="300" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1578998345734" />
+    <state width="1882" height="300" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1578999389895" />
     <state width="1899" height="304" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578412875969" />
-    <state width="1882" height="300" key="GridCell.Tab.0.right" timestamp="1578998345735">
+    <state width="1882" height="300" key="GridCell.Tab.0.right" timestamp="1578999389896">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578227478713" />
-    <state width="1882" height="300" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1578998345735" />
+    <state width="1882" height="300" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1578999389896" />
     <state width="1899" height="304" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578412875969" />
     <state x="761" y="444" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578399983027">
       <screen x="0" y="0" width="1920" height="1040" />

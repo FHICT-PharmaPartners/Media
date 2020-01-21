@@ -6,7 +6,7 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
 })
 export class MedicineService {
 
-    private apiURL = '/api/medicine';
+    private apiURL = '/api/medicine/getAll/' + localStorage.getItem('Token');
     private medicine: any;
 
     constructor(private http: HttpClient) {
@@ -23,7 +23,6 @@ export class MedicineService {
         return new Promise((resolve) => {
             this.http.get(this.apiURL, opts)
                 .subscribe((response) => {
-
                     this.medicine = response;
                     resolve(this.medicine);
                 });
