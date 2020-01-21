@@ -2,7 +2,8 @@
     <ion-button id="closebutton" (click)="close()"><ion-icon expand="full" name="close"></ion-icon></ion-button>
 
 <div style="width: 100%; text-align: center;">
-  {{diagnose.issues}}
+    <ion-item *ngFor="let diagnose of diagnose.issues">
+        <p >{{diagnose}}</p>
+    </ion-item>
 </div>
-
 </ion-content>

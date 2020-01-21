@@ -79,7 +79,7 @@ export class JWT {
 
 export class Diagnose {
     passed: boolean;
-    issues: Array<string> = [];
+    issues?: Array<string> = [];
     seeDoctor: boolean;
     advice: string;
 }

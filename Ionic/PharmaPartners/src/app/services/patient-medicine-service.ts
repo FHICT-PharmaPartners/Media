@@ -76,7 +76,7 @@ export class PatientMedicineService {
     }
 
     removeMedicineFromList(patientMedicine): Promise<any> {
-        const url = '/api/patientMedicine/removeMedicine';
+        const url = '/api/patientMedicine/removeMedicine/' + patientMedicine.id;
         const opts = {
             headers: new HttpHeaders({
                 Authorization: `Bearer ` + localStorage.getItem(`Token`)

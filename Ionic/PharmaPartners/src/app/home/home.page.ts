@@ -31,7 +31,8 @@ export class HomePage implements OnInit {
     }
 
     removeMedicineFromList(patientMedicine) {
-        return this.dataService.removeMedicineFromList(patientMedicine);
+       return this.dataService.removeMedicineFromList(patientMedicine)
+            .then(r => location.reload());
     }
 
     async showModal(diagnose) {

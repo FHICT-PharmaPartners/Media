@@ -39,7 +39,7 @@
            src="/assets/Liquid.svg" /> <!-- tijdelijke extra prk -->
       <ion-text> {{ medicine.name }} </ion-text>
 
-      <ion-button (click)="showModal()" slot="end"><ion-icon name="add"></ion-icon></ion-button>
+      <ion-button (click)="showModal(medicine.id)" slot="end"><ion-icon name="add"></ion-icon></ion-button>
     </ion-item>
 
   </ion-list>
