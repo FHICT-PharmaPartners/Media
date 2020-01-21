@@ -36,32 +36,30 @@
     <ion-input type="number" placeholder="Lengte hier"></ion-input>
   </ion-item>
   <ion-radio-group>
-    <ion-list-header>
-      <ion-label>Name</ion-label>
-    </ion-list-header>
+    
 
+<div class = "center">
     <ion-button>
-      <ion-label>Biff</ion-label>
-      <ion-radio slot="start" value="biff" checked></ion-radio>
+      <ion-icon name="male"></ion-icon>
+      <ion-label>Man</ion-label>
+      <ion-radio value="Man" class="geslacht" checked></ion-radio>
     </ion-button>
 
     <ion-button>
-      <ion-label>Griff</ion-label>
-      <ion-radio slot="start" value="griff"></ion-radio>
+      <ion-icon name="female"></ion-icon>
+      <ion-label>Vrouw</ion-label>
+      <ion-radio value="Vrouw" class="geslacht"></ion-radio>
     </ion-button>
+</div>
 
   </ion-radio-group>
 
   <div class="ion-padding">
-    <ion-button expand="block" type="submit" class="ion-no-margin">Registreren</ion-button>
+    <ion-button id="registreren" expand="block" href="/registreren" style="margin:auto;">Registreren</ion-button>
   </div>
-
-
-
-
 
   <div class="registreren">
     <p color="primary">Al een Account?</p>
-      <ion-button expand="block" href="/login" class="ion-no-margin"> Login</ion-button>
+      <ion-button id="registreren" expand="block" href="/login" style="margin:auto;"> Login</ion-button>
 </div>
 </ion-content>
