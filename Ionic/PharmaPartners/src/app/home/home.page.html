@@ -14,7 +14,7 @@
     </ion-item>
 
 
-    <ion-item class="conflict" >
+    <ion-item class="conflict" *ngIf="diagnose.passed == 'false'" >
              <div style="width: 100%; text-align: center;">
                <p>Mogelijk conflict</p>
                  <ion-button (click)="showModal(diagnose)" slot="end"><ion-icon color="danger" name="warning" style="font-size: 28px;"></ion-icon></ion-button>

@@ -18,7 +18,7 @@ export class AppComponent implements OnInit{
     },
     {
       title: 'Contact',
-      url: '/info',
+      url: '/contact',
       icon: 'help'
     },
     {

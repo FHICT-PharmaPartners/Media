@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b7fb5c05-590a-4465-a78c-a7d6e1ce4a59" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/app.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/home/home.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/home/home.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/home/home.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/home/home.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/services/authentication-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/services/authentication-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/services/medicine-services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/services/medicine-services.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/services/patient-medicine-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Ionic/PharmaPartners/src/app/services/patient-medicine-service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +94,7 @@
       <workItem from="1578475381428" duration="640000" />
       <workItem from="1578992047226" duration="7323000" />
       <workItem from="1579007936986" duration="25000" />
-      <workItem from="1579593241067" duration="3370000" />
+      <workItem from="1579593241067" duration="4195000" />
     </task>
     <servers />
   </component>
