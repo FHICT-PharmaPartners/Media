@@ -30,6 +30,10 @@ export class HomePage implements OnInit {
             });
     }
 
+    removeMedicineFromList(patientMedicine) {
+        return this.dataService.removeMedicineFromList(patientMedicine);
+    }
+
     async showModal(diagnose) {
         const modal = await this.modalCtrl.create({
             component: ShowConflictComponent,

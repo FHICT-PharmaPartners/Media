@@ -10,7 +10,7 @@ export class AuthenticationService {
         if (!jwt) {
             location.href = `/login`;
         } else {
-            return console.log('Authenticated!');
+            return;
         }
     }
 }

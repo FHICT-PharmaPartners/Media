@@ -8,6 +8,7 @@ export class PatientMedicineService {
 
     private patientMedicine: any;
     private diagnose: any;
+    private response: any;
 
     constructor(private http: HttpClient) {
     }
@@ -30,7 +31,6 @@ export class PatientMedicineService {
     }
 
     saveMedicine(dosage, startDate, endDate): Promise<any> {
-        // const url = '/api/patientMedicine/addMedicine';
         const id = localStorage.getItem("medicine");
         const url = '/api/patientMedicine/addMedicine/' + localStorage.getItem(`Token`);
 
@@ -71,6 +71,24 @@ export class PatientMedicineService {
                     console.log(response);
                     this.diagnose = response;
                     resolve(this.diagnose);
+                });
+        });
+    }
+
+    removeMedicineFromList(patientMedicine): Promise<any> {
+        const url = '/api/patientMedicine/removeMedicine';
+        const opts = {
+            headers: new HttpHeaders({
+                Authorization: `Bearer ` + localStorage.getItem(`Token`)
+            })
+        };
+
+        return new Promise((resolve) => {
+            this.http.delete(url, opts)
+                .subscribe((response) => {
+                    console.log(response);
+                    this.response = response;
+                    resolve(this.response);
                 });
         });
     }
